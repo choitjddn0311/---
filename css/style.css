@@ -204,6 +204,7 @@ header {
     width: 500px;
     height: 500px;
     position: relative;
+    display: none;
 }
 .car3 > img {
     position: absolute;
