@@ -14,7 +14,6 @@ li {
 #wrap {
     width: 1300px;
     background-color: #fff;
-    margin-top: 15px;
 }
 
 /* header */
@@ -22,17 +21,21 @@ header {
     width: 1300px;
     height: 150px;
     display: flex;
+    position: sticky;
+    top: 0;
 }
 .logo {
-    width: 300px;
+    width: 320px;
     height: 150px;
     margin: 0;
+    background-color: #fff;
 
 }
 .logo img {
     width: 300px;
     height: 120px;
     margin-top: 15px;
+    margin-left: 10px;
 }
 .logo a {
     width: 300px;
@@ -42,7 +45,8 @@ header {
 .menu {
     width: 1000px;
     height: 120px;
-    margin-top: 21px;
+    padding-top: 30px;
+    background-color: #fff;
 }
 .menu > ul {
     width: 400px;
@@ -106,17 +110,118 @@ header {
 
 /* sample area */
 .sample {
-    width: 1300px;
-    height: 400px;
+    width: 1270px;
+    height: 220px;
     margin: 0;
+    padding-top: 160px;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 .sample > img {
-    margin-top: 180px;
     width: 150px;
     height: 150px;
-    margin-left: 15px;
 }
 .sample_title{
     font-size: 25px;
-    margin-left: 15px;
+}
+.sample_detail {
+    font-size: 18px;
+}
+
+/* goods area */
+.goods {
+    width: 1300px;
+    height: 650px;
+    display: flex;
+    margin: 0;
+}
+.goods_about {
+    margin: 0;
+    width: 650px;
+    height: 650px;
+    background-color: #11142b;
+    border-radius: 20px;
+}
+.goods_carousel {
+    margin: 0;
+    width: 650px;
+    height: 650px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+.car1 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.car1 > img {
+    position: absolute;
+    top: 75px;
+    opacity: 0.1;
+}
+.car1 > img:hover {
+    opacity: 1;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.car1 > p {
+    position: absolute;
+    top: 325px;
+    left: 85px;
+    color: #520000;
+    font-size: 30px;
+    font-weight: bold;
+    width: 330px;
+    height: 40px;
+} 
+.car2 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: none;
+}
+.car2 > img {
+    position: absolute;
+    top: 75px;
+    opacity: 0.1;
+}
+.car2 > img:hover {
+    opacity: 1;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.car2 > p {
+    position: absolute;
+    top: 325px;
+    left: 85px;
+    color: #121b66;
+    font-size: 30px;
+    font-weight: bold;
+    width: 330px;
+    height: 40px;
+}
+.car3 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.car3 > img {
+    position: absolute;
+    top: 75px;
+    opacity: 0.1;
+}
+.car3 > img:hover {
+    opacity: 1;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.car3 > p {
+    position: absolute;
+    top: 325px;
+    left: 70px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    width: 330px;
+    height: 40px;
 }
