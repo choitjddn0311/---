@@ -23,6 +23,7 @@ header {
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 400;
 }
 .logo {
     width: 320px;
@@ -32,15 +33,13 @@ header {
 
 }
 .logo img {
-    width: 300px;
-    height: 120px;
-    margin-top: 15px;
-    margin-left: 10px;
+    width: 250px;
+    height: 100px;
+    padding: 25px;
 }
 .logo a {
     width: 300px;
     height: 120px;
-    margin-top: 15px;
 }
 .menu {
     width: 1000px;
@@ -71,7 +70,7 @@ header {
 }
 .sub_menu {
     width: 200px;
-    height: 120px;
+    height: 130px;
     display: none;
 }
 .sub_menu > li {
@@ -129,18 +128,49 @@ header {
 }
 
 /* goods area */
+.about {
+    position: relative;
+}
 .goods {
     width: 1300px;
     height: 650px;
     display: flex;
     margin: 0;
+    position: absolute;
+    z-index: 100;
 }
 .goods_about {
     margin: 0;
     width: 650px;
     height: 650px;
-    background-color: #11142b;
+    background-color: #6d0010;
     border-radius: 20px;
+    box-shadow: 0px 8px 6px gray;
+}
+.goods_title h3 {
+    color: #eee;
+    font-size: 25px;
+    width: 580px;
+    margin-top: 20px;
+}
+.goods_title > ul > h4 {
+    color: #eee;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.goods_title > ul > li {
+    list-style: inside;
+    color: #eee;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.goods_contents {
+    font-size: 17px;
+    color: #eee;
+    width: 580px;
+    margin-top: 20px;
 }
 .goods_carousel {
     margin: 0;
@@ -148,6 +178,23 @@ header {
     height: 650px;
     background-color: #f2f2f2;
     border-radius: 20px;
+    display: flex;
+}
+.goods_buy_btn {
+    padding: 30px;
+}
+.goods_buy_btn > button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #eee;
+    color: #6d0010;
+    border: none;
+    border-radius: 30px;
+}
+.goods_buy_btn > button:hover {
+    background-color: #ddd;
+    cursor: pointer;
 }
 .car1 {
     width: 500px;
@@ -161,7 +208,7 @@ header {
 }
 .car1 > img:hover {
     opacity: 1;
-    transition: all 0.6s;
+    transition: all 0.9s;
     cursor: pointer;
 }
 .car1 > p {
@@ -187,7 +234,7 @@ header {
 }
 .car2 > img:hover {
     opacity: 1;
-    transition: all 0.6s;
+    transition: all 0.8s;
     cursor: pointer;
 }
 .car2 > p {
@@ -225,4 +272,22 @@ header {
     font-weight: bold;
     width: 330px;
     height: 40px;
+}
+.son {
+    width: 1300px;
+    height: 650px;
+    display: flex;
+    position: absolute;
+    top: 610px;
+}
+.real_son {
+    margin: 0;
+    background-color: #eee;
+    border-radius: 30px;
+}
+.real_son > img {
+    width: 650px;
+    height: 550px;
+    padding: 50px 0 50px 0;
+    border-radius: 30px;
 }
