@@ -5,11 +5,25 @@ $(document).ready(function(){
         $(".sub_menu").stop().slideUp();
     });
 
-    // $("버튼").click(function(){
-    //     ~~다음 창이보이기 (car1~car3) 
-    // });
-    // $("뒤로가기버튼").click(function(){
-    //     ~그 전창을 보내기 (ex> car2 --> car 1, car3--> car1 , car1 --> car3)
-    // })
+    let car1 = 1;
+
+    $(".next").click(function(){
+        if(car1 == 1){
+            $(".goods_carousel").css("transform" , "translateX(-650px)")
+            car1 = car1 + 1;
+        }
+        else if (car1==2) {
+            $(".goods_carousel").css("transform" , "translateX(-1300px)")
+        }
+    });
+    $(".prev").click(function () {
+        if (car1 == 3) {
+          $(".goods_carousel").css("transform", "translateX(-650px)");
+          car1 = car1 - 1;
+        } else if (car1 == 2) {
+          $(".goods_carousel").css("transform", "translateX(0px)");
+          car1 = car1 - 1;
+        }
+      });
 });
 
