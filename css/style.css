@@ -179,6 +179,7 @@ header {
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
+    box-shadow: 0px 7px 6px #af5656;
 }
 .goods_buy_btn {
     padding: 30px;
@@ -193,7 +194,7 @@ header {
     border-radius: 30px;
 }
 .goods_buy_btn > button:hover {
-    background-color: #ddd;
+    background-color: #ccc;
     cursor: pointer;
 }
 .car1 {
@@ -279,6 +280,8 @@ header {
     display: flex;
     position: absolute;
     top: 610px;
+    box-shadow: 0px 8px 6px gray;
+    border-radius: 30px;
 }
 .real_son {
     margin: 0;
@@ -290,4 +293,184 @@ header {
     height: 550px;
     padding: 50px 0 50px 0;
     border-radius: 30px;
+    opacity: 0.6;
+}
+.real_son > img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.son_about {
+    width: 650px;
+    height: 650px;
+    background-color: #6d0010;
+    border-radius: 30px;
+    box-shadow: 0px 8px 6px gray;
+}
+.son_title {
+    margin-top: 220px;
+    margin-left: 210px;
+}
+.son_title > h1 {
+    font-size: 60px;
+    color: #eee;
+}
+.son_contents {
+    margin-left: 185px;
+}
+.son_contents > p {
+    font-size: 25px;
+    color: #eee;
+    margin-top: 5px;
+}
+.simbol_img {
+    margin-left: 285px;
+    margin-top: 20px;
+}
+.simbol_img > img {
+    width: 70px;
+}
+.shopping {
+    width: 1300px;
+    height: 1000px;
+    margin-top: 1260px;
+    z-index: 300;
+    font-size: 30px;
+}
+.shopping > h1 {
+    padding: 100px 0 0 70px;
+    color: #6d0010;
+}
+.things {
+    display: flex;
+}
+.things img {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+}
+.things h4 {
+    font-size: 25px;
+    text-align: center;
+}
+.view {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 10px;
+    border: 2px solid #8b0000;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #8b0000;
+}
+.view1 {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 10px;
+    border: 2px solid #170558;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #170558;
+}
+.view2 {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 10px;
+    border: 2px solid #dd0021;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #dd0021;
+}
+.view:hover {
+    background-color: #8b0000;
+    color: #fff;
+    cursor: pointer;
+}
+.view1:hover {
+    background-color: #170558;
+    color: #fff;
+    cursor: pointer;
+}
+.view2:hover {
+    background-color: #dd0021;
+    color: #fff;
+    cursor: pointer;
+}
+footer {
+    width: 1300px;
+    height: 300px;
+    display: flex;
+    background-color: #6d0010;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.footer1 {
+    width: 700px;
+    height: 300px;
+    margin: 0;
+}
+.under_logo {
+    width: 700px;
+    height: 100px;
+    padding: 100px 0 0 30px;
+}
+.under_logo  img {
+    width: 250px;
+    height: 100px;
+}
+.under_menu {
+    width: 100%;
+    height: 100px;
+}
+.under_menu {
+    display: flex;
+}
+.under_menu > p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 20px;
+}
+.under_menu > p:hover {
+    color: #eee;
+    cursor: pointer;
+}
+.footer2 {
+    width: 600px;
+    height: 300px;
+}
+.sns {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 120px;
+    font-weight: bold;
+}
+.sns > img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+.email {
+    width: 600px;
+    height: 150px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 100px;
+}
+.email > div {
+    width: 500px;
+    height: 2px;
+    background-color: #fff;
 }
