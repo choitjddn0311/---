@@ -24,12 +24,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 400;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .logo {
     width: 320px;
     height: 150px;
     margin: 0;
-    background-color: #fff;
 
 }
 .logo img {
@@ -45,7 +45,6 @@ header {
     width: 1000px;
     height: 120px;
     padding-top: 30px;
-    background-color: #fff;
 }
 .menu > ul {
     width: 400px;
@@ -195,16 +194,48 @@ header {
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
-    box-shadow: 0px 7px 6px #af5656;
+    box-shadow: 0px 7px 6px gray;
+    overflow: hidden;
+    position: relative;
+}
+.goods_carousel > button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(201, 201, 201, 0.6);
+    position: absolute;
+    z-index: 300;
+    font-size: 16px;
+}
+.prev {
+    top: 325px;
+    left: 25px;
+}
+.next {
+    left: 575px;
+    top: 325px;
+}
+.carousel_container {
+    width: 500px;
+    height: 500px;
+    margin: 75px;
+    position: relative;
+    overflow: hidden;
 }
 .car1 {
     width: 500px;
-    height: 650px;
-    position: relative;
+    height: 500px;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 .car1 > img {
     position: absolute;
-    top: 75px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0.1;
 }
 .car1 > img:hover {
@@ -214,9 +245,9 @@ header {
 }
 .car1 > p {
     position: absolute;
-    top: 325px;
+    top: 250px;
     left: 85px;
-    color: #520000;
+    color: #6d0010;
     font-size: 30px;
     font-weight: bold;
     width: 330px;
@@ -225,13 +256,19 @@ header {
 .car2 {
     width: 500px;
     height: 500px;
-    position: relative;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     display: none;
 }
 .car2 > img {
     position: absolute;
     top: 75px;
     opacity: 0.1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .car2 > img:hover {
     opacity: 1;
@@ -240,7 +277,7 @@ header {
 }
 .car2 > p {
     position: absolute;
-    top: 325px;
+    top: 250px;
     left: 85px;
     color: #121b66;
     font-size: 30px;
@@ -251,12 +288,18 @@ header {
 .car3 {
     width: 500px;
     height: 500px;
-    position: relative;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     display: none;
 }
 .car3 > img {
     position: absolute;
     top: 75px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0.1;
 }
 .car3 > img:hover {
@@ -266,7 +309,7 @@ header {
 }
 .car3 > p {
     position: absolute;
-    top: 325px;
+    top: 250px;
     left: 70px;
     color: #fff;
     font-size: 30px;
@@ -282,23 +325,60 @@ header {
     top: 610px;
     box-shadow: 0px 8px 6px gray;
     border-radius: 30px;
-}
-.real_son {
-    margin: 0;
     background-color: #eee;
-    border-radius: 30px;
 }
-.real_son > img {
-    width: 650px;
-    height: 550px;
-    padding: 50px 0 50px 0;
-    border-radius: 30px;
+.player_container {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 175px 75px 175px 75px;
+}
+.player1 {
+    margin: 0;
+}
+.player1 > img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
     opacity: 0.6;
 }
-.real_son > img:hover {
+.player1 > img:hover {
     opacity: 1;
     cursor: pointer;
-    transition: all 0.8s;
+    transition: all 0.9s;
+}
+.player2 {
+    margin: 0;
+    display: none;
+}
+.player2 > img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    opacity: 0.6;
+}
+.player2 > img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+.player3 {
+    display: none;
+    margin: 0;
+}
+.player3 > img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    opacity: 0.6;
+}
+.player3 > img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.9s;
 }
 .son_about {
     width: 650px;
@@ -306,6 +386,7 @@ header {
     background-color: #6d0010;
     border-radius: 30px;
     box-shadow: 0px 8px 6px gray;
+    margin: 0;
 }
 .son_title {
     margin-top: 220px;
