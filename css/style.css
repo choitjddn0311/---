@@ -69,7 +69,7 @@ header {
 }
 .sub_menu {
     width: 200px;
-    height: 615px;
+    height: 130px;
     display: none;
     background-color: #fff;
 }
@@ -88,20 +88,21 @@ header {
     background-color: #6d0010;
 }
 .sub_menu > li:nth-child(2) {
-    background-color: #1c2dc4;
-}
-.sub_menu > li:nth-child(2):hover {
-    background-color: #170558;
-}
-.sub_menu > li:nth-child(3) {
     background-color: #eee;
 }
-.sub_menu > li:nth-child(3):hover {
-    background-color: #bbb;
-}
-.sub_menu > li:nth-child(3) > a {
+.sub_menu > li:nth-child(2) > a {
     color: #333;
 }
+.sub_menu > li:nth-child(2):hover {
+    background-color: #bbb;
+}
+.sub_menu > li:nth-child(3) {
+    background-color: #1c2dc4;
+}
+.sub_menu > li:nth-child(3):hover {
+    background-color: #170558;
+}
+
 .sub_menu > li a{
     color: #fff;
     font-size: 17px;
@@ -210,10 +211,10 @@ header {
     height: 50px;
     border: none;
     border-radius: 25px;
-    background-color: rgba(201, 201, 201, 0.6);
     position: absolute;
     z-index: 300;
-    font-size: 16px;
+
+    font-size: 25px;
 }
 .goods_carousel > button:hover {
     cursor: pointer;
