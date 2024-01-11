@@ -69,8 +69,9 @@ header {
 }
 .sub_menu {
     width: 200px;
-    height: 130px;
+    height: 615px;
     display: none;
+    background-color: #fff;
 }
 .sub_menu > li {
     width: 200px;
@@ -118,6 +119,12 @@ header {
 .sample > img {
     width: 150px;
     height: 150px;
+    opacity: 0.6;
+}
+.sample > img:hover {
+    opacity: 1;
+    transition: all 0.9s;
+    cursor: pointer;
 }
 .sample_title{
     font-size: 25px;
@@ -208,6 +215,9 @@ header {
     z-index: 300;
     font-size: 16px;
 }
+.goods_carousel > button:hover {
+    cursor: pointer;
+}
 .prev {
     top: 325px;
     left: 25px;
@@ -272,7 +282,7 @@ header {
 }
 .car2 > img:hover {
     opacity: 1;
-    transition: all 0.8s;
+    transition: all 0.9s;
     cursor: pointer;
 }
 .car2 > p {
@@ -304,7 +314,7 @@ header {
 }
 .car3 > img:hover {
     opacity: 1;
-    transition: all 0.6s;
+    transition: all 0.9s;
     cursor: pointer;
 }
 .car3 > p {
@@ -429,6 +439,12 @@ header {
     margin-top: 100px;
     width: 300px;
     height: 300px;
+    opacity: 0.6;
+}
+.things img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.9s;
 }
 .things h4 {
     font-size: 25px;
@@ -534,7 +550,7 @@ footer {
     color: #fff;
     font-size: 25px;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 155px;
     font-weight: bold;
 }
 .sns > img {
@@ -547,11 +563,20 @@ footer {
     height: 150px;
     color: #fff;
     font-size: 22px;
+    margin-left: 50px;
     text-align: center;
     line-height: 100px;
+    position: relative;
 }
-.email > div {
-    width: 500px;
-    height: 2px;
-    background-color: #fff;
+.email_input {
+    position: absolute;
+    top: 80px;
+    right: 90px;
+    width: 600px;
+    height: 30px;
+    background-color: #6d0010 ;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
 }
